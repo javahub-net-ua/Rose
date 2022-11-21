@@ -4,8 +4,11 @@ The mod has a configuration menu via the Mod Menu. You can also use the config f
 ```
 {
   "sources": [
-    "/mnt/server/zipResourcePack.zip",
-    "/home/martin/directoryResourcePack/",
+    // If your resource pack is a zip file
+    "/home/martin/Downloads/zipResourcePack.zip",
+    // If your resource pack is a directory
+    "/home/martin/Documents/directoryResourcePack/",
+    // The same but for Windows
     "C:\\Users\\Martin\\Documents\\myResourcePack.zip"
   ]
 }
