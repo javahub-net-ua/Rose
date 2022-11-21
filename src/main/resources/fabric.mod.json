@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "rose",
+  "version": "${version}",
+  "name": "Rose",
+  "description": "Resource packs Over SFTP, Etc.",
+  "authors": [
+    "Nozistance"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/rose/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.javahub.rose.Rose"
+    ]
+  },
+  "mixins": [
+    "rose.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
