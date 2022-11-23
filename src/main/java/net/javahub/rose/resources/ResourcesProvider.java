@@ -1,5 +1,6 @@
 package net.javahub.rose.resources;
 
+import net.javahub.rose.config.RoseConfig;
 import net.minecraft.resource.*;
 
 import java.io.File;
@@ -14,7 +15,8 @@ import static net.javahub.rose.Rose.CONFIG;
 public class ResourcesProvider implements ResourcePackProvider {
 
     public static Set<File> getSources() {
-        return CONFIG.sources().stream().map(File::new).collect(Collectors.toSet());
+        return CONFIG.sources.stream().filter(RoseConfig.Source::isEnabled)
+                .map(RoseConfig.Source::getPath).map(File::new).collect(Collectors.toSet());
     }
 
     private Supplier<ResourcePack> getResourceResource(File file) {
