@@ -14,3 +14,9 @@ isEnabled = false
 path = "C:\\Users\\martin\\myRpOnWindows.zip"
 isEnabled = false
 ```
+
+# TODO:
+- ✅ Local system
+- ❌ SFTP/SSHFS
+- ❌ SMB (CIFS)
+- ❌ FTP
