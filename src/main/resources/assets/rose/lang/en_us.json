@@ -1,4 +1,7 @@
 {
-  "text.config.rose.option.sources": "Sources",
-  "text.config.rose.title": "Rose's Config"
+  "text.autoconfig.rose.title": "Rose's config",
+  "text.autoconfig.rose.option.sources": "Sources",
+  "text.autoconfig.rose.option.Source": "Source",
+  "text.autoconfig.rose.option.Source.path": "Path",
+  "text.autoconfig.rose.option.Source.isEnabled": "Enabled"
 }
