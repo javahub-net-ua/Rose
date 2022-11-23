@@ -14,6 +14,9 @@
   "entrypoints": {
     "main": [
       "net.javahub.rose.Rose"
+    ],
+    "modmenu": [
+      "net.javahub.rose.config.RoseModMenuIntegration"
     ]
   },
   "mixins": [
@@ -21,6 +24,6 @@
   ],
   "depends": {
     "fabricloader": ">=0.14.10",
-    "minecraft": "1.19.2"
+    "minecraft": "*"
   }
 }
