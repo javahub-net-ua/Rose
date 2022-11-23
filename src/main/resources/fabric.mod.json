@@ -7,14 +7,15 @@
   "authors": [
     "Nozistance"
   ],
-  "contact": {},
+  "contact": {
+    "issues": "https://github.com/javahub-net-ua/Rose/issues",
+    "homepage": "https://github.com/javahub-net-ua/Rose",
+    "sources": "https://github.com/javahub-net-ua/Rose"
+  },
   "license": "MIT",
   "icon": "assets/rose/icon.png",
   "environment": "client",
   "entrypoints": {
-    "main": [
-      "net.javahub.rose.Rose"
-    ],
     "modmenu": [
       "net.javahub.rose.config.RoseModMenuIntegration"
     ]
@@ -23,7 +24,6 @@
     "rose.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.10",
     "minecraft": "*"
   }
 }
