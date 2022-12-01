@@ -18,13 +18,14 @@ import java.util.Set;
 
 @Environment(EnvType.CLIENT)
 @Mixin(ResourcePackManager.class)
-public abstract class RoseMixin {
+public class ResourcePacksMixin {
     @Mutable
-    @Final
     @Shadow
+    @Final
     private Set<ResourcePackProvider> providers;
 
-    @Inject(method = "<init>*", at = @At("TAIL"))
+    @Inject(method = "<init>(Lnet/minecraft/resource/ResourcePackProfile$Factory;" +
+            "[Lnet/minecraft/resource/ResourcePackProvider;)V", at = @At("TAIL"))
     private void registerLoader(CallbackInfo info) {
         this.providers = new HashSet<>(this.providers);
         this.providers.add(new ResourcesProvider());
