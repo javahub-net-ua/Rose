@@ -3,7 +3,7 @@
   "id": "rose",
   "version": "${version}",
   "name": "Rose",
-  "description": "Resource packs Over Sftp, Etc.",
+  "description": "Resources Over Sftp, Etc.",
   "authors": [
     "Nozistance"
   ],
@@ -17,7 +17,7 @@
   "environment": "client",
   "entrypoints": {
     "modmenu": [
-      "net.javahub.rose.config.RoseModMenuIntegration"
+      "net.javahub.rose.config.RoseConfig"
     ]
   },
   "mixins": [

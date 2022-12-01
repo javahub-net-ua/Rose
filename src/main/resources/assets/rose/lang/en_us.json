@@ -1,7 +1,8 @@
 {
-  "text.autoconfig.rose.title": "Rose's config",
-  "text.autoconfig.rose.option.sources": "Sources",
   "text.autoconfig.rose.option.Source": "Source",
+  "text.autoconfig.rose.option.Source.isEnabled": "Enabled",
   "text.autoconfig.rose.option.Source.path": "Path",
-  "text.autoconfig.rose.option.Source.isEnabled": "Enabled"
+  "text.autoconfig.rose.option.worldSaves": "Worlds",
+  "text.autoconfig.rose.option.resourcePacks": "Resource Packs",
+  "text.autoconfig.rose.title": "Rose's config"
 }
