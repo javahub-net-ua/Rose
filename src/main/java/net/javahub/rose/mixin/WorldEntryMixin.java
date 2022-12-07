@@ -28,7 +28,7 @@ public class WorldEntryMixin {
 
     @ModifyVariable(method = "render", at = @At("STORE"), ordinal = 1)
     public String getName(String sign) {
-        String name = sign.replaceAll("\\(.*\\)", "");
+        String name = sign.replaceAll(" \\(.*\\)", "");
         String time = StringUtils.difference(name, sign);
         return Path.of(name).getFileName() + time;
     }
